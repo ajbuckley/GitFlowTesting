@@ -22,14 +22,16 @@
             <artifactId>gitflow-maven-plugin</artifactId>
             <version>1.10.0</version>
             <configuration>
-              <flowInitContext>
-                 <masterBranchName>master</masterBranchName>
-                 <developBranchName>develop</developBranchName>
-                 <featureBranchPrefix>feature/</featureBranchPrefix>
-                 <releaseBranchPrefix>release/</releaseBranchPrefix>
-                 <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
-                 <versionTagPrefix>v</versionTagPrefix>
-              </flowInitContext>
+              <gitFlowConfig>
+                <productionBranch>master</productionBranch>
+                <developmentBranch>develop</developmentBranch>
+                <featureBranchPrefix>feature/</featureBranchPrefix>
+                <releaseBranchPrefix>release/</releaseBranchPrefix>
+                <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
+                <supportBranchPrefix>support/</supportBranchPrefix>
+                <versionTagPrefix></versionTagPrefix>
+                <origin>origin</origin>
+              </gitFlowConfig>
             </configuration>
         </plugin>
     </plugins>
